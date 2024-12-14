@@ -8,7 +8,7 @@ function HomePage() {
     <div>
       {/* Hero Section */}
       <section className="hero">
-        <div ClassName="hero-filter"></div>
+        <div className="hero-filter"></div>
         <h1>Welcome to EduFund</h1>
         <p>
           EduFund is dedicated to providing essential educational resources to

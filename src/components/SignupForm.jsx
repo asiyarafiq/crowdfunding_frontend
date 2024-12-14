@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import postSignup from "../api/post-Signup";
+import LoginForm from "./LoginForm";
+import postLogin from "../api/post-login";
 function SignupForm() {
   const navigate = useNavigate();
   const [credentials, setCredentials] = useState({
@@ -27,9 +29,13 @@ function SignupForm() {
         credentials.email,
         credentials.firstname,
         credentials.lastname
-      ).then((response) => {
-        navigate("/");
-      });
+      )
+        .then((response) => {
+          postLogin(username, password, email, firstname, lastname);
+        })
+        .then((response) => {
+          navigate("/");
+        });
     }
   };
   return (
@@ -71,7 +77,7 @@ function SignupForm() {
         />
       </div>
       <div>
-        <label htmlFor="emailid">Email: </label>
+        <label htmlFor="email">Email: </label>
         <input
           type="text"
           id="email"

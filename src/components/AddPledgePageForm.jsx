@@ -12,7 +12,7 @@ function AddPledgePageForm() {
   const [credentials, setCredentials] = useState({
     amount: "",
     comment: "",
-    anonymous: null,
+    anonymous: "off",
   });
 
   const handleChange = (event) => {
@@ -32,9 +32,7 @@ function AddPledgePageForm() {
         id
       ).then((response) => {
         window.localStorage.setItem("token", response.token);
-        setAuth({
-          token: response.token,
-        });
+
         navigate("/");
       });
     }
@@ -70,7 +68,7 @@ function AddPledgePageForm() {
       </div>
 
       <button type="submit" onClick={handleSubmit}>
-        Login
+        createpledge
       </button>
     </form>
   );
