@@ -31,8 +31,6 @@ function AddPledgePageForm() {
         credentials.anonymous,
         id
       ).then((response) => {
-        window.localStorage.setItem("token", response.token);
-
         navigate("/");
       });
     }
