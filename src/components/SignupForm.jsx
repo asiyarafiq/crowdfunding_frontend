@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import postSignup from "../api/post-signup.js";
+import postSignup from "../api/post-Signup";
 function SignupForm() {
   const navigate = useNavigate();
   const [credentials, setCredentials] = useState({
@@ -9,7 +9,6 @@ function SignupForm() {
     firstname: "",
     lastname: "",
     email: "",
-    
   });
 
   const handleChange = (event) => {
@@ -27,8 +26,7 @@ function SignupForm() {
         credentials.password,
         credentials.email,
         credentials.firstname,
-        credentials.lastname,
-        
+        credentials.lastname
       ).then((response) => {
         navigate("/");
       });

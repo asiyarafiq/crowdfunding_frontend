@@ -1,6 +1,168 @@
-#project-list {
+/* #project-list {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     column-gap: 10px;
     row-gap: 10px;
+  } */
+/* Hero Section Styles */
+.hero {
+  background-image: url("classroom.jpg"); /* Add image here */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  position: relative;
+  width: 100%;
+}
+.hero-filter {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+}
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background-color: #ff8c00; /* Bright color for the button */
+  padding: 12px 25px;
+  border: none;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #ff5c00; /* Button hover effect */
+}
+
+/* Container for the entire homepage */
+#project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Styling each project card */
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Card hover effect */
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Image styling inside the project card */
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Card content */
+.project-card .content {
+  padding: 15px;
+}
+
+/* Title of the project */
+.project-card h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Description text */
+.project-card p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+/* Button to pledge */
+.project-card .pledge-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.project-card .pledge-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1200px) {
+  #project-list {
+    justify-content: center;
   }
+
+  .project-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  #project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project-card img {
+    height: 150px;
+  }
+
+  .project-card h3 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .project-card img {
+    height: 130px;
+  }
+
+  .project-card h3 {
+    font-size: 1.1em;
+  }
+}
