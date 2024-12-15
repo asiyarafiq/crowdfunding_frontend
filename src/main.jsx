@@ -9,7 +9,7 @@ import SignupPage from "./pages/SignupPage.jsx";
 
 import NavBar from "./components/NavBar.jsx";
 import { AuthProvider } from "./components/AuthProvider.jsx";
-import AddProjectPage from "./pages/addProjectPage.jsx";
+import AddProjectPage from "./pages/AddProjectPage.jsx";
 import AddPledgePageForm from "./components/AddPledgePageForm.jsx";
 
 const router = createBrowserRouter([
