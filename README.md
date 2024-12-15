@@ -34,7 +34,7 @@ Here's a reminder of the required features. Your crowdfunding project must:
   - [ x] Whether the pledge is anonymous or not
   - [x ] A comment to go along with the pledge
 - [NA ] Implement suitable update/delete functionality, e.g. should a project owner be allowed to update a project description?
-- [ NA] Implement suitable permissions, e.g. who is allowed to delete a pledge?git 
+- [ NA] Implement suitable permissions, e.g. who is allowed to delete a pledge?git
 - [x ] Return the relevant status codes for both successful and unsuccessful requests to the API.
 - [ x] Handle failed requests gracefully (e.g. you should have a custom 404 page rather than the default error page).
 - [ x] Use Token Authentication.
@@ -54,7 +54,8 @@ Please include the following in your readme doc:
 
 - [x ] A link to the deployed project.https://fundedu.netlify.app/
 - [ x] A screenshot of the homepage ![alt text](image.png)
-- [ x] A screenshot of the project creation page ![alt text](image-4.png)
-- [x ] A screenshot of the project creation form ![alt text](image-2.png) 
+- [ x] A screenshot of the project creation page ![alt text](image-4.png) ![alt text](image-5.png)
+- [x ] A screenshot of the project creation form ![alt text](image-2.png)
 - [ x] A screenshot of a project with pledges ![alt text](image-3.png)
 - [NA ] A screenshot of the resulting page when an unauthorized user attempts to edit a project (optional, depending on whether or not this functionality makes sense in your app!)
+  git
