@@ -6,7 +6,7 @@
   } */
 /* Hero Section Styles */
 .hero {
-  background-image: url("classroom.jpg"); /* Add image here */
+  background-image: url("../assets/classroom.jpg"); /* Add image here */
   background-size: cover;
   background-position: center;
   text-align: center;
